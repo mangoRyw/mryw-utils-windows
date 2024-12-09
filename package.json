@@ -1,4 +1,3 @@
-
 {
   "name": "mryw-utils-windows",
   "version": "2.0.0",
@@ -23,5 +22,8 @@
     "url": "https://github.com/mangoRyw/mryw-utils-windows/issues"
   },
   "homepage": "https://github.com/mangoRyw/mryw-utils-windows#readme",
-  "category": "Utilities"
+  "category": "Utilities",
+  "dependencies": {
+    "async": "3.2.6"
+  }
 }

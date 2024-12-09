@@ -37,5 +37,14 @@ function debounce(fn, delay) {
     }
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
-  module.exports = { debounce, throttle, deepClone, capitalize };
+
+// Check if an object is empty
+function isEmpty(obj) {
+  if (typeof obj !== 'object' || obj === null) {
+    throw new TypeError('Expected an object as input');
+  }
+  return Object.keys(obj).length === 0;
+}
+
+module.exports = { debounce, throttle, deepClone, capitalize, isEmpty };
   
