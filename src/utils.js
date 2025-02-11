@@ -26,10 +26,10 @@ function debounce(fn, delay) {
     };
   }
   
-  // Deep Clone 
-  function deepClone(obj) {
-    return JSON.parse(JSON.stringify(obj));
-  }
+  // // Deep Clone 
+  // function deepClone(obj) {
+  //   return JSON.parse(JSON.stringify(obj));
+  // }
   
   function capitalize(str) {
     if (typeof str !== 'string') {
@@ -39,12 +39,12 @@ function debounce(fn, delay) {
 }
 
 // Check if an object is empty
-function isEmpty(obj) {
-  if (typeof obj !== 'object' || obj === null) {
-    throw new TypeError('Expected an object as input');
-  }
-  return Object.keys(obj).length === 0;
-}
+// function isEmpty(obj) {
+//   if (typeof obj !== 'object' || obj === null) {
+//     throw new TypeError('Expected an object as input');
+//   }
+//   return Object.keys(obj).length === 0;
+// }
 
-module.exports = { debounce, throttle, deepClone, capitalize, isEmpty };
+module.exports = { debounce, throttle, capitalize, isEmpty };
   
